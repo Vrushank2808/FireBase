@@ -12,7 +12,7 @@ function SignUp() {
     const navigate = useNavigate();
 
 
-    async function handleGoggleSignIn() {
+    async function handleGoogleSignIn() {
         try {
             await googleSignIn();
             navigate("/dashboard");
@@ -42,7 +42,7 @@ function SignUp() {
     }
 
     return (
-        <>
+        <div>
             <div>
                 <h3>Create a new account</h3>
                 <p>
@@ -67,7 +67,7 @@ function SignUp() {
                     />
                 </div>
 
-                <div>
+                <div >
                     <label htmlFor="password">Password </label>
                     <input
                         id="password"
@@ -103,11 +103,11 @@ function SignUp() {
             </form>
 
             <div>
-                <button onClick={handleGoggleSignIn} disabled={loading}>
+                <button onClick={handleGoogleSignIn} disabled={loading}>
                     {loading ? "Loading" : "Siginup with google"}
                 </button>
             </div>
-        </>
+        </div>
     )
 }
 

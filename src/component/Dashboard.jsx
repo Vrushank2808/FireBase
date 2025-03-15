@@ -19,8 +19,7 @@ function Dashboard() {
   }
 
   return (
-    <div>
-      <h1>My Website</h1>
+    <div className="dashboard-header">
 
       <h1>dashboard</h1>
 

@@ -28,10 +28,10 @@ export function handleAuthError(error) {
         return "Invalid email or password";
 
       case "auth/user-not-found":
-        return "User noy found please check your email";
+        return "User not found please check your email";
 
       case "auth/wrong-password":
-        return "In correct password";
+        return "Incorrect password";
 
       case "auth/weak-password":
         return "Password should be at least 6 characters";
@@ -40,7 +40,7 @@ export function handleAuthError(error) {
         return "Too many failed attempts. Please try again later";
 
       default:
-        return "An unkown error occured. Please try again";
+        return "An unknown error occured. Please try again";
     }
   }
 }

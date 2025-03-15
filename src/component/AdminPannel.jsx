@@ -21,7 +21,7 @@ function AdminPanel() {
         createdAt: new Date(),
       });
 
-      alert("Product added Successulffy");
+      alert("Product added Successfully");
       setProductName("");
       setPrice("");
     } catch (error) {

@@ -9,6 +9,7 @@ import PrivateRoute from "./component/PrivateRoute";
 import Dashboard from "./component/Dashboard";
 import SignUp from "./component/SignUp";
 import Login from "./component/Login";
+import "./styles.css";
 
 
 function App() {
